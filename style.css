@@ -4,13 +4,14 @@ body {
   height: 100%;
   width: 100%;
   background: lightgrey;
+  font-family: Geneva, Verdana, sans-serif;
 }
 
 .container {
   padding: 5px;
 }
 
-.slider {
+.slides {
   height: 300px;
   display: flex;
   overflow-x: auto;
@@ -41,8 +42,8 @@ body {
 }
 
 .slide {
-  width: calc(100vw - 10px);
-  margin-right: 5px;
+  width: calc(100vw - 20px);
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +52,8 @@ body {
   background: #61a3f0;
   color: #fff;
   font-size: 4rem;
-  font-family: Geneva, Verdana, sans-serif;
-  /* scroll-behavior: smooth; */
+  border-radius: 10px;
+  transform-origin: center center;
+  transition: transform 0.5s;
+  scroll-behavior: smooth;
 }
